@@ -1,7 +1,7 @@
 import React from "react";
 import { useTaskContext } from "./TaskProvider.jsx";
 import ListItem from "./ListItem.jsx";
-
+import "./MainPage.css"
 export default function MainPage({ children }) {
     const {
         completedTasks,
@@ -15,7 +15,7 @@ export default function MainPage({ children }) {
     
 
     return (
-        <div>
+        <div className="maincontainer">
             <h2 >{children}</h2>
 
 

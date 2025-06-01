@@ -1,0 +1,42 @@
+.complete-button{
+  background-color: #10b981; 
+  color: white; 
+  font-weight: 700; 
+  padding-top: 0.5rem; 
+  padding-bottom: 0.5rem; 
+  padding-left: 1rem; 
+  padding-right: 1rem; 
+  border-radius: 0.5rem; 
+}
+
+.complete-button:hover {
+  background-color: #047857; 
+}
+.undo-button {
+  background-color: #eab308; 
+  color: white; 
+  font-weight: 700; 
+  padding: 0.5rem 1rem; 
+  border-radius: 0.5rem; 
+}
+
+.undo-button :hover {
+  background-color: #a16207; 
+}
+.item-container1  {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between; 
+  align-items: center; 
+  width: 40rem; 
+  padding: 1.5rem; 
+  background-color: white; 
+  border: 1px solid #e5e7eb; 
+  border-radius: 0.5rem; 
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); 
+  flex-wrap: wrap; 
+}
+
+.item-container1:hover {
+  background-color: #f3f4f6; 
+}

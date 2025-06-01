@@ -1,4 +1,5 @@
 import { useTaskContext } from "./TaskProvider.jsx";
+import "./ListItem.Module.css"
 import React from "react";
 
 export default function ListItem({ task, isCompleted }) {
@@ -6,7 +7,7 @@ export default function ListItem({ task, isCompleted }) {
     
 
     return (
-        <div>
+        <div className="item-container1">
             <div>
                 <p>{task.title}</p>
                 {isCompleted && task.completedDate && (
@@ -23,11 +24,11 @@ export default function ListItem({ task, isCompleted }) {
                         : completeHandler(task.id)
                         
                 }
-                // className={
-                //     !isCompleted
-                //         ? //css for complete button
-                //         : //css for uncomplete button
-                // }
+                className={
+                    !isCompleted
+                        ?  'complete-button'
+                        : 'undo-button'
+                }
             >
                 {isCompleted ? "Undo" : "Complete"}
             </button>

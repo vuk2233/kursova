@@ -1,11 +1,12 @@
 import MainPage from "./component/MainPage.jsx";
-
+import "./App.css"
 
 
 function App() { 
     return (
         <div > 
-            <div >
+          
+            <div className="pagecontainer" >
                 <MainPage>Pending:</MainPage>
                 <MainPage>Completed:</MainPage>
             </div>
